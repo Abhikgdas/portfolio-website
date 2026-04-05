@@ -6,6 +6,8 @@
     <title>Abhik- DEVELOPER Portfolio</title>
     <link rel ="stylesheet" href = "style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div id ="header">
@@ -13,11 +15,10 @@
             <nav>
                 <img src ="images/logo2.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </nav>
@@ -26,6 +27,7 @@
                 <h1>Hi, I'm<span> Abhik</span> G Das<br> <small>Frontend Developer</small></h1>
             </div>
         </div>
+
         <!-- --------about------- -->
          <div id ="about">
             <div class = "container">
@@ -46,7 +48,7 @@
 
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Python</span><br>Building projects uing python</li>
+                                <li><span>Python</span><br>Building projects using python</li>
                                 <li><span>HTML CSS  </span><br>Frontend Developer</li>
                                 <li><span>JAVA </span><br>OOP concepts</li>
                             </ul>
@@ -79,7 +81,9 @@
         <div class="services-list">
 
             <div>
+                
                 <i class="fab fa-app-store"></i>
+                <img src="christmas/christmastree.jpg" class="service-img">
                 <h2>HTML Design</h2>
                 <p>Designed a basic HTML Christmas Greeting card.</p>
                 <a href="christmas/christmas.html" target="_blank">Learn more</a>
@@ -87,6 +91,7 @@
 
             <div>
                 <i class="fas fa-crop-alt"></i>
+                <img src="images/Screenshot.png" class ="service-img">
                 <h2>Python Calculator</h2>
                 <p>Developed a GUI calculator using Python Tkinter with modern UI and interactive buttons</p>
                 <a href="https://github.com/Abhikgdas/python-calculator" target="_blank"> Learn more</a>
@@ -95,19 +100,58 @@
             <div>
                 
                 <i class="fas fa-code"></i>
+                 <img src="images/portfolio.png" class="service-img">  
                 <h2>Portfolio</h2>
                 <p>Built a Portfolio using HTML CSS and basic JS.</p>
-                <a href="">Learn more</a>
+                <a href="https://Abhikgdas.github.io/portfolio-website" target="_blank">
+                    View Portfolio
+                    </a>
+                    <br>
+                    <a href="https://github.com/abhikgdas/portfolio-website" target="_blank">
+                    View Code
+                    </a>
             </div>
 
         </div>
     </div>
 </div>
         
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            
+            <!-- LEFT SIDE -->
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
 
+                <p><i class="fas fa-paper-plane"></i> abhikgdas@gmail.com</p><br>
+                <p><i class="fas fa-phone-square-alt"></i> 9074984200</p>
 
+                <div class="social-icons">
+                    <a href="https://github.com/Abhikgdas" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
 
+                    <a href="https://linkedin.com/in/Abhikgdas" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
 
+                    <a href="https://instagram.com/abh1._k" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <a href="cv/cv.html" download class="btn btn2">Download CV</a>
+            </div>
+
+          
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>© 2026 Abhik G Das</p>
+</footer>
 <script>
 function opentab(tabname){
 
