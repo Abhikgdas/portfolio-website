@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhik- DEVELOPER Portfolio</title>
+    <link rel ="stylesheet" href = "style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id ="header">
+        <div class="container">
+            <nav>
+                <img src ="images/logo2.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>CSE Student</p>
+                <h1>Hi, I'm<span> Abhik</span> G Das<br> <small>Frontend Developer</small></h1>
+            </div>
+        </div>
+        <!-- --------about------- -->
+         <div id ="about">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "about-col-1">
+                        <img src="images/Abhik2.png">
+                    </div>    
+                    <div class = "about-col-2">
+                        <h1 class = "sub-title">About Me</h1>
+                        <p>I am a passionate Computer Science student currently pursuing my degree at Amrita Vishwa Vidyapeetham. I have a strong interest in web development and enjoy building creative and responsive websites using HTML, CSS, and basic JavaScript. I am continuously learning new technologies and improving my problem-solving skills through hands-on projects. My goal is to become a skilled software developer and contribute to innovative and impactful solutions in the tech industry.<br></p>
+                       
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+            
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Building projects uing python</li>
+                                <li><span>HTML CSS  </span><br>Frontend Developer</li>
+                                <li><span>JAVA </span><br>OOP concepts</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2025-26</span><br>udemy java course</li>
+                                <li><span>2024-25</span><br>udemy python course</li>
+                                <li><span>2025-26 </span><br>HTML CSS Basic JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2008-21</span><br>Chinmaya Vidyalaya</li>
+                                <li><span>2021-23</span><br>HHSIB Edneer</li>
+                                <li><span>2025-29</span><br>Amrita Vishwa Vidyapeetham</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- ----------services-------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <div class="services-list">
+
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>HTML Design</h2>
+                <p>Designed a basic HTML Christmas Greeting card.</p>
+                <a href="christmas/christmas.html" target="_blank">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Python Calculator</h2>
+                <p>Developed a GUI calculator using Python Tkinter with modern UI and interactive buttons</p>
+                <a href="https://github.com/Abhikgdas/python-calculator" target="_blank"> Learn more</a>
+            </div>
+
+            <div>
+                
+                <i class="fas fa-code"></i>
+                <h2>Portfolio</h2>
+                <p>Built a Portfolio using HTML CSS and basic JS.</p>
+                <a href="">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+        
+
+
+
+
+<script>
+function opentab(tabname){
+
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    for(let link of tablinks){
+        link.classList.remove("active-link");
+    }
+
+    for(let content of tabcontents){
+        content.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
